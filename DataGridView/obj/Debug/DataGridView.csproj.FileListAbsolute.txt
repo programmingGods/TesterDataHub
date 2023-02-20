@@ -1,0 +1,11 @@
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.csproj.AssemblyReference.cache
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.csproj.SuggestedBindingRedirects.cache
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.Form1.resources
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.Properties.Resources.resources
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.csproj.GenerateResource.cache
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\bin\Debug\DataGridView.exe.config
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\bin\Debug\DataGridView.exe
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\bin\Debug\DataGridView.pdb
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.exe
+C:\Users\Юрий\source\repos\DataGridView\DataGridView\obj\Debug\DataGridView.pdb
