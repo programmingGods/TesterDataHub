@@ -36,11 +36,11 @@
             this.labelUser = new System.Windows.Forms.Label();
             this.tabPageProduct = new System.Windows.Forms.TabPage();
             this.labelProduct = new System.Windows.Forms.Label();
-            this.GenerateProduct = new System.Windows.Forms.Button();
+            this.generateProduct = new System.Windows.Forms.Button();
             this.textBoxProduct = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPagePurchase = new System.Windows.Forms.TabPage();
-            this.GeneratePurchase = new System.Windows.Forms.Button();
+            this.generatePurchase = new System.Windows.Forms.Button();
             this.labelPurchase = new System.Windows.Forms.Label();
             this.textBoxPurchase = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -48,9 +48,9 @@
             this.labelSocialNetwork = new System.Windows.Forms.Label();
             this.textBoxSocialNetwork = new System.Windows.Forms.TextBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.GenerateSocialNetwork = new System.Windows.Forms.Button();
+            this.generateSocialNetwork = new System.Windows.Forms.Button();
             this.tabPagePhoneNumber = new System.Windows.Forms.TabPage();
-            this.GeneratePhoneNumber = new System.Windows.Forms.Button();
+            this.generatePhoneNumber = new System.Windows.Forms.Button();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
@@ -134,7 +134,7 @@
             // tabPageProduct
             // 
             this.tabPageProduct.Controls.Add(this.labelProduct);
-            this.tabPageProduct.Controls.Add(this.GenerateProduct);
+            this.tabPageProduct.Controls.Add(this.generateProduct);
             this.tabPageProduct.Controls.Add(this.textBoxProduct);
             this.tabPageProduct.Controls.Add(this.dataGridView2);
             this.tabPageProduct.Location = new System.Drawing.Point(4, 25);
@@ -154,16 +154,16 @@
             this.labelProduct.TabIndex = 3;
             this.labelProduct.Text = "          Введите\r\nКоличество строк";
             // 
-            // GenerateProduct
+            // generateProduct
             // 
-            this.GenerateProduct.AutoSize = true;
-            this.GenerateProduct.Location = new System.Drawing.Point(952, 81);
-            this.GenerateProduct.Name = "GenerateProduct";
-            this.GenerateProduct.Size = new System.Drawing.Size(118, 32);
-            this.GenerateProduct.TabIndex = 2;
-            this.GenerateProduct.Text = "Сгенерировать";
-            this.GenerateProduct.UseVisualStyleBackColor = true;
-            this.GenerateProduct.Click += new System.EventHandler(this.GenerateProduct_Click);
+            this.generateProduct.AutoSize = true;
+            this.generateProduct.Location = new System.Drawing.Point(952, 81);
+            this.generateProduct.Name = "generateProduct";
+            this.generateProduct.Size = new System.Drawing.Size(118, 32);
+            this.generateProduct.TabIndex = 2;
+            this.generateProduct.Text = "Сгенерировать";
+            this.generateProduct.UseVisualStyleBackColor = true;
+            this.generateProduct.Click += new System.EventHandler(this.GenerateProduct_Click);
             // 
             // textBoxProduct
             // 
@@ -184,7 +184,7 @@
             // 
             // tabPagePurchase
             // 
-            this.tabPagePurchase.Controls.Add(this.GeneratePurchase);
+            this.tabPagePurchase.Controls.Add(this.generatePurchase);
             this.tabPagePurchase.Controls.Add(this.labelPurchase);
             this.tabPagePurchase.Controls.Add(this.textBoxPurchase);
             this.tabPagePurchase.Controls.Add(this.dataGridView3);
@@ -196,16 +196,16 @@
             this.tabPagePurchase.Text = "Purchase";
             this.tabPagePurchase.UseVisualStyleBackColor = true;
             // 
-            // GeneratePurchase
+            // generatePurchase
             // 
-            this.GeneratePurchase.AutoSize = true;
-            this.GeneratePurchase.Location = new System.Drawing.Point(952, 75);
-            this.GeneratePurchase.Name = "GeneratePurchase";
-            this.GeneratePurchase.Size = new System.Drawing.Size(118, 29);
-            this.GeneratePurchase.TabIndex = 3;
-            this.GeneratePurchase.Text = "Сгенерировать";
-            this.GeneratePurchase.UseVisualStyleBackColor = true;
-            this.GeneratePurchase.Click += new System.EventHandler(this.GeneratePurchase_Click);
+            this.generatePurchase.AutoSize = true;
+            this.generatePurchase.Location = new System.Drawing.Point(952, 75);
+            this.generatePurchase.Name = "generatePurchase";
+            this.generatePurchase.Size = new System.Drawing.Size(118, 29);
+            this.generatePurchase.TabIndex = 3;
+            this.generatePurchase.Text = "Сгенерировать";
+            this.generatePurchase.UseVisualStyleBackColor = true;
+            this.generatePurchase.Click += new System.EventHandler(this.GeneratePurchase_Click);
             // 
             // labelPurchase
             // 
@@ -238,7 +238,7 @@
             this.tabPageScialNetwork.Controls.Add(this.labelSocialNetwork);
             this.tabPageScialNetwork.Controls.Add(this.textBoxSocialNetwork);
             this.tabPageScialNetwork.Controls.Add(this.dataGridView4);
-            this.tabPageScialNetwork.Controls.Add(this.GenerateSocialNetwork);
+            this.tabPageScialNetwork.Controls.Add(this.generateSocialNetwork);
             this.tabPageScialNetwork.Location = new System.Drawing.Point(4, 25);
             this.tabPageScialNetwork.Name = "tabPageScialNetwork";
             this.tabPageScialNetwork.Padding = new System.Windows.Forms.Padding(3);
@@ -273,19 +273,19 @@
             this.dataGridView4.Size = new System.Drawing.Size(952, 510);
             this.dataGridView4.TabIndex = 1;
             // 
-            // GenerateSocialNetwork
+            // generateSocialNetwork
             // 
-            this.GenerateSocialNetwork.Location = new System.Drawing.Point(956, 74);
-            this.GenerateSocialNetwork.Name = "GenerateSocialNetwork";
-            this.GenerateSocialNetwork.Size = new System.Drawing.Size(117, 27);
-            this.GenerateSocialNetwork.TabIndex = 0;
-            this.GenerateSocialNetwork.Text = "Сгенерировать";
-            this.GenerateSocialNetwork.UseVisualStyleBackColor = true;
-            this.GenerateSocialNetwork.Click += new System.EventHandler(this.GenerateSocialNetwork_Click);
+            this.generateSocialNetwork.Location = new System.Drawing.Point(956, 74);
+            this.generateSocialNetwork.Name = "generateSocialNetwork";
+            this.generateSocialNetwork.Size = new System.Drawing.Size(117, 27);
+            this.generateSocialNetwork.TabIndex = 0;
+            this.generateSocialNetwork.Text = "Сгенерировать";
+            this.generateSocialNetwork.UseVisualStyleBackColor = true;
+            this.generateSocialNetwork.Click += new System.EventHandler(this.GenerateSocialNetwork_Click);
             // 
             // tabPagePhoneNumber
             // 
-            this.tabPagePhoneNumber.Controls.Add(this.GeneratePhoneNumber);
+            this.tabPagePhoneNumber.Controls.Add(this.generatePhoneNumber);
             this.tabPagePhoneNumber.Controls.Add(this.labelPhoneNumber);
             this.tabPagePhoneNumber.Controls.Add(this.textBoxPhoneNumber);
             this.tabPagePhoneNumber.Controls.Add(this.dataGridView5);
@@ -297,16 +297,16 @@
             this.tabPagePhoneNumber.Text = "PhoneNumber";
             this.tabPagePhoneNumber.UseVisualStyleBackColor = true;
             // 
-            // GeneratePhoneNumber
+            // generatePhoneNumber
             // 
-            this.GeneratePhoneNumber.AutoSize = true;
-            this.GeneratePhoneNumber.Location = new System.Drawing.Point(959, 74);
-            this.GeneratePhoneNumber.Name = "GeneratePhoneNumber";
-            this.GeneratePhoneNumber.Size = new System.Drawing.Size(118, 26);
-            this.GeneratePhoneNumber.TabIndex = 4;
-            this.GeneratePhoneNumber.Text = "Сгенерировать";
-            this.GeneratePhoneNumber.UseVisualStyleBackColor = true;
-            this.GeneratePhoneNumber.Click += new System.EventHandler(this.GeneratePhoneNumber_Click);
+            this.generatePhoneNumber.AutoSize = true;
+            this.generatePhoneNumber.Location = new System.Drawing.Point(959, 74);
+            this.generatePhoneNumber.Name = "generatePhoneNumber";
+            this.generatePhoneNumber.Size = new System.Drawing.Size(118, 26);
+            this.generatePhoneNumber.TabIndex = 4;
+            this.generatePhoneNumber.Text = "Сгенерировать";
+            this.generatePhoneNumber.UseVisualStyleBackColor = true;
+            this.generatePhoneNumber.Click += new System.EventHandler(this.GeneratePhoneNumber_Click);
             // 
             // labelPhoneNumber
             // 
@@ -372,12 +372,12 @@
         private System.Windows.Forms.TabPage tabPageUser;
         private System.Windows.Forms.TabPage tabPageProduct;
         private System.Windows.Forms.Label labelProduct;
-        private System.Windows.Forms.Button GenerateProduct;
+        private System.Windows.Forms.Button generateProduct;
         private System.Windows.Forms.TextBox textBoxProduct;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tabPagePurchase;
         private System.Windows.Forms.TabPage tabPageScialNetwork;
-        private System.Windows.Forms.Button GeneratePurchase;
+        private System.Windows.Forms.Button generatePurchase;
         private System.Windows.Forms.Label labelPurchase;
         private System.Windows.Forms.TextBox textBoxPurchase;
         private System.Windows.Forms.DataGridView dataGridView3;
@@ -388,9 +388,9 @@
         private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.TextBox textBoxPhoneNumber;
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.Button GeneratePhoneNumber;
+        private System.Windows.Forms.Button generatePhoneNumber;
         private System.Windows.Forms.Label labelUser;
-        private System.Windows.Forms.Button GenerateSocialNetwork;
+        private System.Windows.Forms.Button generateSocialNetwork;
     }
 }
 

@@ -8,11 +8,15 @@ namespace DataGridView
 {
     public class PhoneNumber
     {
-        public PhoneNumber(int Id, int IdUser, int Number) 
+        long Id;
+        int IdUser;
+        string Number;
+
+        public PhoneNumber(long Id, int IdUser, string Number) 
         {
-            Id = Id;
-            IdUser = IdUser;
-            Number = Number;
+            this.Id = Id;
+            this.IdUser = IdUser;
+            this.Number = Number;
         }
     }
 }

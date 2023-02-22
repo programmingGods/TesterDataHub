@@ -8,11 +8,14 @@ namespace DataGridView
 {
     public class Purchase
     {
-        public Purchase(int Id, int IdUser, int IdProduct) 
+        long Id;
+        int IdUser;
+        int IdProduct;
+        public Purchase(long Id, int IdUser, int IdProduct) 
         {
-            Id = Id;
-            IdUser = IdUser;
-            IdProduct = IdProduct;
+            this.Id = Id;
+            this.IdUser = IdUser;
+            this.IdProduct = IdProduct;
         }
     }
 }

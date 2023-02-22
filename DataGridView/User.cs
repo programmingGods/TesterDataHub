@@ -28,8 +28,8 @@ namespace DataGridView
 
         //        //resultString[i] = symbolsKit[random.Next(symbolsKit.Length)];
         //        resultName = generatedIndex.ToString();
-        //    }
-        //    return resultName;
-        //}
+    //}
+    //        return resultName;
+    //    }
     }
 }
