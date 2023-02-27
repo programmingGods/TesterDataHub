@@ -8,9 +8,9 @@ namespace DataGridView
 {
     public class Purchase
     {
-        long Id;
-        int IdUser;
-        int IdProduct;
+        public long Id;
+        public int IdUser;
+        public int IdProduct;
         public Purchase(long Id, int IdUser, int IdProduct) 
         {
             this.Id = Id;

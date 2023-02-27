@@ -8,9 +8,9 @@ namespace DataGridView
 {
     public class PhoneNumber
     {
-        long Id;
-        int IdUser;
-        string Number;
+        public long Id;
+        public int IdUser;
+        public string Number;
 
         public PhoneNumber(long Id, int IdUser, string Number) 
         {

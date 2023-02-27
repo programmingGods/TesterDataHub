@@ -8,7 +8,7 @@ namespace DataGridView
 {
     public class SocialNetwork : EntityBase
     {
-        int IdUser;
+        public int IdUser;
         public SocialNetwork(long Id, string Name, int IdUser)
         {
             this.Id = Id;

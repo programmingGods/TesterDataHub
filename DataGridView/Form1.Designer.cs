@@ -94,6 +94,7 @@
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(118, 22);
             this.textBoxUser.TabIndex = 2;
+            this.textBoxUser.Text = "100";
             // 
             // TabControlEntityes
             // 
@@ -105,7 +106,7 @@
             this.TabControlEntityes.Location = new System.Drawing.Point(12, 12);
             this.TabControlEntityes.Name = "TabControlEntityes";
             this.TabControlEntityes.SelectedIndex = 0;
-            this.TabControlEntityes.Size = new System.Drawing.Size(1081, 551);
+            this.TabControlEntityes.Size = new System.Drawing.Size(1081, 560);
             this.TabControlEntityes.TabIndex = 4;
             // 
             // tabPageUser
@@ -117,7 +118,7 @@
             this.tabPageUser.Location = new System.Drawing.Point(4, 25);
             this.tabPageUser.Name = "tabPageUser";
             this.tabPageUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUser.Size = new System.Drawing.Size(1073, 522);
+            this.tabPageUser.Size = new System.Drawing.Size(1073, 531);
             this.tabPageUser.TabIndex = 0;
             this.tabPageUser.Text = "User";
             this.tabPageUser.UseVisualStyleBackColor = true;
@@ -129,7 +130,7 @@
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(124, 32);
             this.labelUser.TabIndex = 3;
-            this.labelUser.Text = "        Введите\r\nколичество строк";
+            this.labelUser.Text = "     Введите\r\nколичество строк";
             // 
             // tabPageProduct
             // 
@@ -140,7 +141,7 @@
             this.tabPageProduct.Location = new System.Drawing.Point(4, 25);
             this.tabPageProduct.Name = "tabPageProduct";
             this.tabPageProduct.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageProduct.Size = new System.Drawing.Size(1073, 522);
+            this.tabPageProduct.Size = new System.Drawing.Size(1073, 531);
             this.tabPageProduct.TabIndex = 1;
             this.tabPageProduct.Text = "Product";
             this.tabPageProduct.UseVisualStyleBackColor = true;
@@ -171,6 +172,7 @@
             this.textBoxProduct.Name = "textBoxProduct";
             this.textBoxProduct.Size = new System.Drawing.Size(115, 22);
             this.textBoxProduct.TabIndex = 1;
+            this.textBoxProduct.Text = "100";
             // 
             // dataGridView2
             // 
@@ -191,7 +193,7 @@
             this.tabPagePurchase.Location = new System.Drawing.Point(4, 25);
             this.tabPagePurchase.Name = "tabPagePurchase";
             this.tabPagePurchase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePurchase.Size = new System.Drawing.Size(1073, 522);
+            this.tabPagePurchase.Size = new System.Drawing.Size(1073, 531);
             this.tabPagePurchase.TabIndex = 2;
             this.tabPagePurchase.Text = "Purchase";
             this.tabPagePurchase.UseVisualStyleBackColor = true;
@@ -222,6 +224,7 @@
             this.textBoxPurchase.Name = "textBoxPurchase";
             this.textBoxPurchase.Size = new System.Drawing.Size(118, 22);
             this.textBoxPurchase.TabIndex = 1;
+            this.textBoxPurchase.Text = "100";
             // 
             // dataGridView3
             // 
@@ -242,7 +245,7 @@
             this.tabPageScialNetwork.Location = new System.Drawing.Point(4, 25);
             this.tabPageScialNetwork.Name = "tabPageScialNetwork";
             this.tabPageScialNetwork.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageScialNetwork.Size = new System.Drawing.Size(1073, 522);
+            this.tabPageScialNetwork.Size = new System.Drawing.Size(1073, 531);
             this.tabPageScialNetwork.TabIndex = 3;
             this.tabPageScialNetwork.Text = "SocialNetwork";
             this.tabPageScialNetwork.UseVisualStyleBackColor = true;
@@ -250,7 +253,7 @@
             // labelSocialNetwork
             // 
             this.labelSocialNetwork.AutoSize = true;
-            this.labelSocialNetwork.Location = new System.Drawing.Point(953, 6);
+            this.labelSocialNetwork.Location = new System.Drawing.Point(947, 3);
             this.labelSocialNetwork.Name = "labelSocialNetwork";
             this.labelSocialNetwork.Size = new System.Drawing.Size(124, 32);
             this.labelSocialNetwork.TabIndex = 3;
@@ -258,10 +261,11 @@
             // 
             // textBoxSocialNetwork
             // 
-            this.textBoxSocialNetwork.Location = new System.Drawing.Point(967, 46);
+            this.textBoxSocialNetwork.Location = new System.Drawing.Point(952, 46);
             this.textBoxSocialNetwork.Name = "textBoxSocialNetwork";
-            this.textBoxSocialNetwork.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSocialNetwork.Size = new System.Drawing.Size(115, 22);
             this.textBoxSocialNetwork.TabIndex = 2;
+            this.textBoxSocialNetwork.Text = "100";
             // 
             // dataGridView4
             // 
@@ -270,12 +274,12 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(952, 510);
+            this.dataGridView4.Size = new System.Drawing.Size(940, 500);
             this.dataGridView4.TabIndex = 1;
             // 
             // generateSocialNetwork
             // 
-            this.generateSocialNetwork.Location = new System.Drawing.Point(956, 74);
+            this.generateSocialNetwork.Location = new System.Drawing.Point(950, 74);
             this.generateSocialNetwork.Name = "generateSocialNetwork";
             this.generateSocialNetwork.Size = new System.Drawing.Size(117, 27);
             this.generateSocialNetwork.TabIndex = 0;
@@ -292,7 +296,7 @@
             this.tabPagePhoneNumber.Location = new System.Drawing.Point(4, 25);
             this.tabPagePhoneNumber.Name = "tabPagePhoneNumber";
             this.tabPagePhoneNumber.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePhoneNumber.Size = new System.Drawing.Size(1073, 522);
+            this.tabPagePhoneNumber.Size = new System.Drawing.Size(1073, 531);
             this.tabPagePhoneNumber.TabIndex = 4;
             this.tabPagePhoneNumber.Text = "PhoneNumber";
             this.tabPagePhoneNumber.UseVisualStyleBackColor = true;
@@ -300,7 +304,7 @@
             // generatePhoneNumber
             // 
             this.generatePhoneNumber.AutoSize = true;
-            this.generatePhoneNumber.Location = new System.Drawing.Point(959, 74);
+            this.generatePhoneNumber.Location = new System.Drawing.Point(949, 74);
             this.generatePhoneNumber.Name = "generatePhoneNumber";
             this.generatePhoneNumber.Size = new System.Drawing.Size(118, 26);
             this.generatePhoneNumber.TabIndex = 4;
@@ -311,7 +315,7 @@
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(953, 3);
+            this.labelPhoneNumber.Location = new System.Drawing.Point(946, 3);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
             this.labelPhoneNumber.Size = new System.Drawing.Size(124, 32);
             this.labelPhoneNumber.TabIndex = 3;
@@ -319,10 +323,11 @@
             // 
             // textBoxPhoneNumber
             // 
-            this.textBoxPhoneNumber.Location = new System.Drawing.Point(970, 46);
+            this.textBoxPhoneNumber.Location = new System.Drawing.Point(949, 46);
             this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
-            this.textBoxPhoneNumber.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPhoneNumber.Size = new System.Drawing.Size(118, 22);
             this.textBoxPhoneNumber.TabIndex = 2;
+            this.textBoxPhoneNumber.Text = "100";
             // 
             // dataGridView5
             // 
@@ -331,7 +336,7 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
-            this.dataGridView5.Size = new System.Drawing.Size(955, 510);
+            this.dataGridView5.Size = new System.Drawing.Size(940, 500);
             this.dataGridView5.TabIndex = 0;
             // 
             // Form1

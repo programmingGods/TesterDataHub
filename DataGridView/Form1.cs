@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DataGridView
 {
@@ -39,8 +40,8 @@ namespace DataGridView
 
             startingPoint += 100;
             return resultString;
-
         }
+
         public User GenerateUser()
         {
             Random random = new Random(startingPoint);
@@ -52,7 +53,6 @@ namespace DataGridView
             startingPoint += 100;
             generatedId++;
             return user;
-
         }
 
         public Product GenerateProduct()
@@ -70,8 +70,6 @@ namespace DataGridView
         public Purchase GeneratePurchase()
         {
             Random random = new Random(startingPoint);
-            //int numberLength = 13;
-            //string symbolsKit = "0123456789";
             int generatedIdUser = random.Next(1, 100);
             int generatedIdProduct = random.Next(1, 100);
 
@@ -114,8 +112,9 @@ namespace DataGridView
             dataGridView1.Columns.Add("ID", "id");
             dataGridView1.Columns.Add("Name", "Name");
 
-            dataGridView1.Rows[0].Cells["ID"].Value = 1;
-            dataGridView1.Rows[0].Cells[1].Value = 2;
+            //dataGridView1.Rows[0].Cells["ID"].Value = 1;
+            //dataGridView1.Rows[0].Cells[1].Value = 2;
+
             for (int i = 1; i < 1; i++)
             {
                 this.dataGridView1.Rows.Add();
@@ -124,21 +123,22 @@ namespace DataGridView
             dataGridView2.Columns.Add("ID", "id");
             dataGridView2.Columns.Add("Name", "name");
 
-            dataGridView2.Rows[0].Cells["ID"].Value = 1;
-            dataGridView2.Rows[0].Cells[1].Value = 2;
+            //dataGridView2.Rows[0].Cells["ID"].Value = 1;
+            //dataGridView2.Rows[0].Cells[1].Value = 2;
+
             for (int i = 1; i < 1; i++)
             {
                 this.dataGridView2.Rows.Add();
-
             }
 
             dataGridView3.Columns.Add("ID", "id");
-            dataGridView3.Columns.Add("IdUser", "IdUser");
+            dataGridView3.Columns.Add("IdUser", "iduser");
             dataGridView3.Columns.Add("IdProduct", "idproduct");
 
-            dataGridView3.Rows[0].Cells["ID"].Value = 1;
-            dataGridView3.Rows[0].Cells[1].Value = 2;
-            dataGridView3.Rows[0].Cells[2].Value = 3;
+            //dataGridView3.Rows[0].Cells["ID"].Value = 1;
+            //dataGridView3.Rows[0].Cells[1].Value = 2;
+            //dataGridView3.Rows[0].Cells[2].Value = 3;
+
             for (int i = 1; i < 1; i++)
             {
                 this.dataGridView3.Rows.Add();
@@ -148,9 +148,10 @@ namespace DataGridView
             dataGridView4.Columns.Add("IdUser", "iduser");
             dataGridView4.Columns.Add("Name", "name");
 
-            dataGridView4.Rows[0].Cells["ID"].Value = 1;
-            dataGridView4.Rows[0].Cells[1].Value = 2;
-            dataGridView4.Rows[0].Cells[2].Value = 3;
+            //dataGridView4.Rows[0].Cells["ID"].Value = 1;
+            //dataGridView4.Rows[0].Cells[1].Value = 2;
+            //dataGridView4.Rows[0].Cells[2].Value = 3;
+
             for (int i = 1; i < 1; i++)
             {
                 this.dataGridView4.Rows.Add();
@@ -160,77 +161,35 @@ namespace DataGridView
             dataGridView5.Columns.Add("IdUser", "iduser");
             dataGridView5.Columns.Add("Number", "number");
 
-            dataGridView5.Rows[0].Cells["ID"].Value = 1;
-            dataGridView5.Rows[0].Cells[1].Value = 2;
-            dataGridView5.Rows[0].Cells[2].Value = 3;
+            //dataGridView5.Rows[0].Cells["ID"].Value = 1;
+            //dataGridView5.Rows[0].Cells[1].Value = 2;
+            //dataGridView5.Rows[0].Cells[2].Value = 3;
+
             for (int i = 1; i < 1; i++)
             {
                 this.dataGridView5.Rows.Add();
             }
-
-
         }
 
         private void generateUser_Click(object sender, EventArgs e)
         {
-            List<User> Users = new List<User>();
-
-
-            for (int i = 0; i < 100; i++)
+            List<User> users = new List<User>();
+            int quantityUsers = Int32.Parse(textBoxUser.Text);
+            for (int i = 0; i < quantityUsers; i++)
             {
-                Users.Add(GenerateUser());
+                users.Add(GenerateUser());
             }
 
-            //Тестируем GenerateStr
-            List<string> testGeneratStr = new List<string>();
-
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < users.Count; i++)
             {
-                testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
+                dataGridView1.Rows.Add(users[i].Id, users[i].Name);
             }
-            //for (int i = 0; i < 1; i++)
+            //List<User> Users = new List<User>();
+
+            //for (int i = 0; i < 100; i++)
             //{
-            //    int rowNumber = dataGridView1.Rows.Add();
-            //    dataGridView1.Rows[rowNumber].Cells["ID"].Value = rowNumber;
-            //    dataGridView1.Rows[rowNumber].Cells[1].Value = textBoxUser;
+            //    Users.Add(GenerateUser());
             //}
-        }
-
-        private void GenerateProduct_Click(object sender, EventArgs e)
-        {
-            List<Product> Product = new List<Product>();
-
-            for (int i = 0; i < 100; i++)
-            {
-                Product.Add(GenerateProduct());
-            }
-
-            //Тестируем GenerateStr
-            List<string> testGeneratStr = new List<string>();
-
-            for (int i = 0; i < 100; i++)
-            {
-                testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
-            }
-
-
-
-            //for (int i = 0; i < 1; i++)
-            //{
-            //    int rowNumber = dataGridView2.Rows.Add();
-            //    dataGridView2.Rows[rowNumber].Cells["ID"].Value = rowNumber;
-            //    dataGridView2.Rows[rowNumber].Cells[1].Value = textBoxProduct;
-            //}
-
-        }
-
-        private void GeneratePurchase_Click(object sender, EventArgs e)
-        {
-            List<Purchase> purchases = new List<Purchase>();
-            for (int i = 0; i < 100; i++)
-            {
-                purchases.Add(GeneratePurchase());
-            }
 
             ////Тестируем GenerateStr
             //List<string> testGeneratStr = new List<string>();
@@ -239,83 +198,103 @@ namespace DataGridView
             //{
             //    testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
             //}
-
-
-            //for (int i = 0; i < 1; i++)
-            //{
-            //    int rowNumber = dataGridView3.Rows.Add();
-            //    dataGridView3.Rows[rowNumber].Cells["ID"].Value = rowNumber;
-            //    dataGridView3.Rows[rowNumber].Cells[1].Value = rowNumber;
-            //    dataGridView3.Rows[rowNumber].Cells[2].Value = textBoxPurchase;
-            //}
-
+            ////dataGridView1.Rows.Add(generateUser);
+            //dataGridView1.Rows[2].Cells[0].Value = "new value";
         }
 
-        private void GenerateSocialNetwork_Click(object sender, EventArgs e)
+        private void GenerateProduct_Click(object sender, EventArgs e)
         {
-            List<SocialNetwork> socialNetworks = new List<SocialNetwork>();
-            for (int i = 0; i < 100; i++)
+            List<Product> products = new List<Product>();
+            int quantitydProducts = Int32.Parse(textBoxProduct.Text);
+            for (int i = 0; i < quantitydProducts; i++)
             {
-                socialNetworks.Add(GenerateSocialNetwork());
+                products.Add(GenerateProduct());
             }
-
-            //Тестируем GenerateStr
-            List<string> testGeneratStr = new List<string>();
-
-            for (int i = 0; i < 100; i++)
+            for(int i = 0;i < products.Count;i++) 
             {
-                testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
+                dataGridView2.Rows.Add(products[i].Id, products[i].Name);
             }
+           
+            //List<Product> Product = new List<Product>();
 
-            //for (int i = 0; i < 1; i++)
+            //for (int i = 0; i < 100; i++)
             //{
-            //    int rowNumber = dataGridView4.Rows.Add();
-            //    dataGridView4.Rows[rowNumber].Cells["ID"].Value = rowNumber;
-            //    dataGridView4.Rows[rowNumber].Cells[1].Value = rowNumber;
-            //    dataGridView4.Rows[rowNumber].Cells[2].Value = textBoxSocialNetwork;
+            //    Product.Add(GenerateProduct());
             //}
 
-        }
-
-        private void GeneratePhoneNumber_Click(object sender, EventArgs e)
-        {
-            List<PhoneNumber> phoneNumbers = new List<PhoneNumber>();
-            for (int i = 0; i < 100; i++)
-            {
-                phoneNumbers.Add(GeneratePhoneNumber());
-            }
-
-            //Тестируем GenerateStr
+            ////Тестируем GenerateStr
             //List<string> testGeneratStr = new List<string>();
 
             //for (int i = 0; i < 100; i++)
             //{
             //    testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
             //}
-
-            //for (int i = 0; i < 1; i++)
-            //{
-            //    int rowNumber = dataGridView5.Rows.Add();
-            //    dataGridView5.Rows[rowNumber].Cells["ID"].Value = rowNumber;
-            //    dataGridView5.Rows[rowNumber].Cells[1].Value = rowNumber;
-            //    dataGridView5.Rows[rowNumber].Cells[2].Value = textBoxPhoneNumber;
-
-            //}
-
         }
 
-
-        /*private void textBox1_TextChanged_1(object sender, EventArgs e)
+        private void GeneratePurchase_Click(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter =
-         String.Format("[ID] like '{0}%'", textBox1.Text);
-            label1.Text = dataGridView1.RowCount.ToString();
+            List<Purchase> purchases = new List<Purchase>(); 
+            int quantityPurchases = Int32.Parse(textBoxPurchase.Text);
+            for (int i = 0; i < quantityPurchases; i++)
+            {
+                purchases.Add(GeneratePurchase());
+            }
+            for (int i = 0; i < purchases.Count; i++)
+            {
+                dataGridView3.Rows.Add(purchases[i].Id, purchases[i].IdUser, purchases[i].IdProduct);
+            }
+            //List<Purchase> purchases = new List<Purchase>();
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    purchases.Add(GeneratePurchase());
+            //}
+        }
 
-        }*/
+        private void GenerateSocialNetwork_Click(object sender, EventArgs e)
+        {
+            List<SocialNetwork> socialNetworks = new List<SocialNetwork>();
+            int quantitySocialNetworks = Int32.Parse(textBoxSocialNetwork.Text);
+            for (int i = 0; i < quantitySocialNetworks; i++)
+            {
+                socialNetworks.Add(GenerateSocialNetwork());
+            }
+            for (int i = 0; i < socialNetworks.Count; i++)
+            {
+                dataGridView4.Rows.Add(socialNetworks[i].Id, socialNetworks[i].IdUser, socialNetworks[i].Name);
+            }
+            //List<SocialNetwork> socialNetworks = new List<SocialNetwork>();
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    socialNetworks.Add(GenerateSocialNetwork());
+            //}
 
+            ////Тестируем GenerateStr
+            //List<string> testGeneratStr = new List<string>();
 
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    testGeneratStr.Add(Generatestr(5, "абвгдеёжзий"));
+            //}
+        }
 
-
+        private void GeneratePhoneNumber_Click(object sender, EventArgs e)
+        {
+            List<PhoneNumber> phoneNumbers = new List<PhoneNumber>();
+            int PhoneNumbers = Int32.Parse(textBoxPhoneNumber.Text);
+            for (int i = 0; i < PhoneNumbers; i++)
+            {
+                phoneNumbers.Add(GeneratePhoneNumber());
+            }
+            for (int i = 0; i < phoneNumbers.Count; i++)
+            {
+                dataGridView5.Rows.Add(phoneNumbers[i].Id, phoneNumbers[i].IdUser, phoneNumbers[i].Number);
+            }
+            //List<PhoneNumber> phoneNumbers = new List<PhoneNumber>();
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    phoneNumbers.Add(GeneratePhoneNumber());
+            //}
+        }
     }
 }
 
